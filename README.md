@@ -81,11 +81,8 @@ http://localhost:3000
 
 ## 📸 Preview
 
-Add screenshots or GIF previews of the website here.
+<img width="1919" height="1015" alt="image" src="https://github.com/user-attachments/assets/8ba84987-c146-4c4b-b827-0b70255619a5" />
 
-```md
-![Preview](./preview.png)
-```
 
 ---
 
