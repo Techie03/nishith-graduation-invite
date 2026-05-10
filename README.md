@@ -1,17 +1,141 @@
-# React + Vite
+# 🎓 Nishith Graduation Invite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern and elegant graduation invitation website built to celebrate a memorable academic milestone. This project provides a personalized digital invitation experience with a clean UI, responsive design, and smooth user interaction.
 
-Currently, two official plugins are available:
+## 🌐 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Visit the live website here:
 
-## React Compiler
+**[https://nishith-graduation-invite.vercel.app/](https://nishith-graduation-invite.vercel.app/)**
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## ✨ Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-"# nishith-graduation-invite" 
+* 🎓 Personalized graduation invitation page
+* 📱 Fully responsive design for desktop and mobile
+* ⚡ Fast deployment with Vercel
+* 🎨 Modern and clean user interface
+* 🖼️ Interactive and visually appealing layout
+* 💌 Digital invitation experience for friends and family
+
+---
+
+## 🛠️ Tech Stack
+
+* **Frontend:** HTML, CSS, JavaScript
+* **Framework:** React / Next.js 
+* **Deployment:** Vercel
+
+---
+
+## 📂 Project Structure
+
+```bash
+.
+├── public/
+├── src/
+│   ├── components/
+│   ├── pages/
+│   ├── assets/
+│   └── styles/
+├── package.json
+└── README.md
+```
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/your-username/nishith-graduation-invite.git
+```
+
+### 2. Navigate to the Project Folder
+
+```bash
+cd nishith-graduation-invite
+```
+
+### 3. Install Dependencies
+
+```bash
+npm install
+```
+
+### 4. Run the Development Server
+
+```bash
+npm run dev
+```
+
+The application will start locally at:
+
+```bash
+http://localhost:3000
+```
+
+---
+
+## 📸 Preview
+
+Add screenshots or GIF previews of the website here.
+
+```md
+![Preview](./preview.png)
+```
+
+---
+
+## 🎯 Purpose of the Project
+
+This project was created as a digital graduation invitation to celebrate an important academic achievement in a modern and interactive way. Instead of using traditional printed invitations, this website provides a shareable online experience accessible from anywhere.
+
+---
+
+## 📦 Deployment
+
+The project is deployed using:
+
+* **Vercel** — fast and seamless frontend hosting
+
+To deploy your own version:
+
+```bash
+vercel
+```
+
+---
+
+## 🤝 Contributing
+
+Contributions, suggestions, and improvements are welcome.
+
+1. Fork the repository
+2. Create a new branch
+3. Commit your changes
+4. Push the branch
+5. Open a Pull Request
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License.
+
+---
+
+## 👨‍💻 Author
+
+**Nishith**
+
+* Graduation Celebration Website
+* Built with ❤️ and creativity
+
+---
+
+## ⭐ Support
+
+If you like this project, consider giving it a star on GitHub ⭐
