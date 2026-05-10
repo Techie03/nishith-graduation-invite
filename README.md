@@ -9,7 +9,7 @@ Visit the live website here:
 **[https://nishith-graduation-invite.vercel.app/](https://nishith-graduation-invite.vercel.app/)**
 
 ---
-## 🌍 Deployed using
+## 🌍 Deployment Badge
 ![Vercel](https://img.shields.io/badge/Deployed-Vercel-black)
 ![React](https://img.shields.io/badge/Frontend-React-blue)
 ![License](https://img.shields.io/badge/License-MIT-green)
