@@ -1,0 +1,232 @@
+/* LiveSpotlight.css — Graduation 2026 · Nishith Chowdary Mareddy */
+
+.yl-root {
+  font-family: 'Inter', sans-serif;
+  background: #0a0a0a;
+  padding: 2.5rem 2rem;
+  border-radius: 2px;
+  position: relative;
+  overflow: hidden;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.yl-root::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 70% 50% at 50% 0%, rgba(212,185,140,0.06) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+/* ── Header ── */
+.yl-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.yl-section-label {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: 0.35em;
+  color: #b8a07a;
+  text-transform: uppercase;
+}
+
+/* ── LIVE Badge ── */
+.yl-live-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  background: rgba(212,185,140,0.08);
+  border: 0.5px solid rgba(212,185,140,0.3);
+  border-radius: 2px;
+  padding: 4px 10px 4px 8px;
+}
+
+.yl-led {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #e63535;
+  box-shadow: 0 0 0 0 rgba(230, 53, 53, 0.7);
+  animation: led-pulse 1.4s ease-in-out infinite;
+  flex-shrink: 0;
+}
+
+@keyframes led-pulse {
+  0%   { box-shadow: 0 0 0 0 rgba(230, 53, 53, 0.7); opacity: 1; }
+  40%  { box-shadow: 0 0 0 5px rgba(230, 53, 53, 0); opacity: 1; }
+  50%  { opacity: 0.25; box-shadow: 0 0 0 0 rgba(230, 53, 53, 0); }
+  100% { opacity: 1; box-shadow: 0 0 0 0 rgba(230, 53, 53, 0.7); }
+}
+
+.yl-live-text {
+  font-family: 'Inter', sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  color: #e63535;
+}
+
+/* ── Divider ── */
+.yl-divider {
+  width: 100%;
+  height: 0.5px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(184, 160, 122, 0.25) 30%,
+    rgba(184, 160, 122, 0.25) 70%,
+    transparent
+  );
+  margin-bottom: 1.5rem;
+}
+
+/* ── Title Block ── */
+.yl-title-block {
+  margin-bottom: 1.25rem;
+}
+
+.yl-main-title {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: clamp(1.2rem, 3vw, 1.7rem);
+  font-weight: 400;
+  font-style: italic;
+  color: #f0e8d6;
+  margin: 0 0 0.25rem;
+  line-height: 1.2;
+}
+
+.yl-sub {
+  font-size: 11px;
+  font-weight: 300;
+  letter-spacing: 0.08em;
+  color: #7a6a52;
+}
+
+/* ── Video Frame ── */
+.yl-spotlight-frame {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 */
+  background: #0d0d0d;
+  border-radius: 1px;
+  overflow: hidden;
+}
+
+/* Gold corner brackets */
+.yl-corner {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  z-index: 10;
+}
+.yl-corner.tl { top: 0;    left: 0;  border-top:    1px solid #b8a07a; border-left:   1px solid #b8a07a; }
+.yl-corner.tr { top: 0;    right: 0; border-top:    1px solid #b8a07a; border-right:  1px solid #b8a07a; }
+.yl-corner.bl { bottom: 0; left: 0;  border-bottom: 1px solid #b8a07a; border-left:   1px solid #b8a07a; }
+.yl-corner.br { bottom: 0; right: 0; border-bottom: 1px solid #b8a07a; border-right:  1px solid #b8a07a; }
+
+/* Shimmer top strip */
+.yl-top-strip {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    #b8a07a 30%,
+    #d4b98c 50%,
+    #b8a07a 70%,
+    transparent
+  );
+  z-index: 9;
+  animation: strip-shimmer 3s ease-in-out infinite;
+  opacity: 0.8;
+}
+
+@keyframes strip-shimmer {
+  0%, 100% { opacity: 0.4; }
+  50%       { opacity: 1; }
+}
+
+/* Vignette overlay */
+.yl-spotlight-overlay {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 5;
+  box-shadow: inset 0 0 40px rgba(0, 0, 0, 0.5);
+}
+
+/* Subtle scanlines */
+.yl-scanline {
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 3px,
+    rgba(0, 0, 0, 0.03) 3px,
+    rgba(0, 0, 0, 0.03) 4px
+  );
+  pointer-events: none;
+  z-index: 6;
+}
+
+/* iframe sits behind decorative overlays */
+.yl-iframe-wrap {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+.yl-iframe-wrap iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
+}
+
+/* ── Footer ── */
+.yl-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.yl-viewing-line {
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  color: #4a3f30;
+  font-weight: 300;
+}
+
+.yl-yt-icon {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  color: #4a3f30;
+  font-weight: 300;
+}
+
+/* ── Responsive ── */
+@media (max-width: 600px) {
+  .yl-root {
+    padding: 1.75rem 1.25rem;
+  }
+  .yl-main-title {
+    font-size: 1.15rem;
+  }
+  .yl-sub {
+    font-size: 10px;
+  }
+}
