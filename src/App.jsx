@@ -5,7 +5,7 @@ import SmoothScroll from './components/SmoothScroll'
 import BackgroundAnim from './components/BackgroundAnim'
 import Navbar from './components/Navbar'
 import LiveSpotlight from './components/LiveSpotlight'
-<LiveSpotlight />
+
 
 import Hero from './components/Hero'
 import Countdown from './components/Countdown'
@@ -34,6 +34,7 @@ export default function App() {
       <BackgroundAnim />
       <Navbar />
       <main style={{ position: 'relative', zIndex: 1 }}>
+        <LiveSpotlight />
         <Hero />
         <Countdown />
         <EventDetails />
