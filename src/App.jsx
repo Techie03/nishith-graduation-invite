@@ -4,6 +4,9 @@ import CustomCursor from './components/CustomCursor'
 import SmoothScroll from './components/SmoothScroll'
 import BackgroundAnim from './components/BackgroundAnim'
 import Navbar from './components/Navbar'
+import LiveSpotlight from './components/LiveSpotlight'
+<LiveSpotlight />
+
 import Hero from './components/Hero'
 import Countdown from './components/Countdown'
 import EventDetails from './components/EventDetails'
