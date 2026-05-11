@@ -33,7 +33,7 @@ export default function App() {
       <CustomCursor />
       <BackgroundAnim />
       <Navbar />
-      <main style={{ position: 'relative', zIndex: 1 }}>
+      <main className="relative z-[1] pt-24">
         <LiveSpotlight />
         <Hero />
         <Countdown />
