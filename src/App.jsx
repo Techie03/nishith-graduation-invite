@@ -4,7 +4,7 @@ import CustomCursor from './components/CustomCursor'
 import SmoothScroll from './components/SmoothScroll'
 import BackgroundAnim from './components/BackgroundAnim'
 import Navbar from './components/Navbar'
-import LiveSpotlight from './components/LiveSpotlight'
+
 
 
 import Hero from './components/Hero'
@@ -33,8 +33,8 @@ export default function App() {
       <CustomCursor />
       <BackgroundAnim />
       <Navbar />
-      <main className="relative z-[1] pt-100">
-        <LiveSpotlight />
+      
+        
         <Hero />
         <Countdown />
         <EventDetails />
@@ -43,7 +43,7 @@ export default function App() {
         <Invitation />
         <Socials />
         <Footer />
-      </main>
-    </SmoothScroll>
+    
+   
   )
 }
